@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Swabhiman Swain} % Your Name
+\newcommand{\course}{B.Tech + M.Tech, Dual Degree -Metallurgical and Materials Engineering} % Your Course
+\newcommand{\roll}{20MT30026} % Your Roll No.
+\newcommand{\phone}{7847809203} % Your Phone Number
+\newcommand{\emaila}{swabhimanswain2002@gmail.com} %Email 1
+\newcommand{\github}{swabhi-iitkgp} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{swabhiman-swain-9a173b205/} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{ \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/swabhiman-swain/} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-\phone }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Indian Institute of Technology, Kharagpur} 
+{B.Tech + M.Tech, Dual Degree in Metallurgical and Materials Engineering} 
+{2020 - 2025} %Event Dates
+{GPA: 8.56/10.0} %Website
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{SkillVertex}
+{Product Executive Intern}
+{May 2022 - August 2022}
+{Bengaluru, India}
+\resumeItemListStart
+\item[$\bullet$] Helped develop user retention strategies.
+\item[$\bullet$] Improved customer feedback and response process.
+\item[$\bullet$] Helped build active student communities and worked on improving the LMS system.
+\item[$\bullet$] Built wireframes, suggesting new and innovative features for the website as well as app of SkillVertex.
+\item[$\bullet$] Did competitor analysis for the company and proposed solutions to increase the reach of the company.
+\resumeItemListEnd
+
+
+\resumeExp
+{BidGames}
+{Co-Founder}
+{August 2021 - March 2022}
+{Kharagpur, India}
+\resumeItemListStart
+\item[$\bullet$] As a blockchain based startup, we did strong research in the blockchain domain. 
+\item[$\bullet$] Built the main website of the platform.
+\item[$\bullet$] Curated educational modules and I was also responsible for handling the social media handles of our company.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Automatic Sanitisation Machine Using UV-C Light}
+{Prof.  Vikrant Racherla,  IIT Kharagpur} %Project Name, Location Name
+{March 2021 - June 2021} %Event Dates
+{\href{https://youtu.be/vSBbuox9BX4}{Link to the project video.}} 
+\resumeItemListStart
+\item[$\bullet$] Developed an automatic sanitisation machine, in a group of 4 that could be used for the purpose of sanitisation.
+\item[$\bullet$] Used Arduino IDE to code for the entire project and helped assemble the machine.
+\resumeItemListEnd
+
+\resumeProject
+{Choosing Optimal Material for a Bicycle Frame Using Finite Element Method}
+{Prof.  Siddhartha Das,  IIT Kharagpur} %Project Name, Location Name
+{November 2021 - December 2021} %Event Dates
+{\href{https://drive.google.com/file/d/1RLepeoN3d3PU3G-FbsTMvCDQLaEFmayg/view?usp=sharing}{Link to the term paper.}} 
+\resumeItemListStart
+\item[$\bullet$] Analysed four loading conditions on a bicycle frame; a static startup, steady ped- alling, vertical impact and horizontal impact with four different mate- rials; Steel, Aluminium, Titanium and Carbon Fiber.
+\item[$\bullet$] Based on these analysis tried to choose a material for building a bicycle frame that will give minimal total distortion.
+\resumeItemListEnd
+
+
+\resumeProject
+{Venture Capital Experience Project} %Project Name
+{Quollab} %Project Name, Location Name
+{February 2021 - March 2021} %Event Dates
+{\href{https://quollab.com/}{Link to Quollab website.}} %Website
+\resumeItemListStart
+\item[$\bullet$] Headed a team of 5 members and participated in the due diligence process.
+\item[$\bullet$] Did strong sector research of the EdTech sector and led virtual investments.
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+
+
+\resumeAchieve{Qualified JEE Advanced}{}{2020}
+
+\resumeAchieve{Qualified NSEP}{}{2020}
+
+\resumeAchieve{Qualified NSEA}{}{2020}
+
+\resumeAchieve{Qualified RMO}{}{2019}
+
+\resumeAchieve{Qualified JMO}{}{2016}
+
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages:} C, Python, Solidity, Dart} & {\textbf{Web Technologies:} HTML, CSS, Node.js, JavaScript} \\  
+\hspace{-3.1mm}{\textbf{ ML/AI:} Sklearn, Numpy, Pandas, Matplotlib} & {\textbf{Miscellaneous:} LaTex}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Relevant Coursework}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Finance: }{Understanding Financial Markets, Trading Basics, Varsity by Zerodha, Bloomberg Market Concepts, Stock Valuation with Comparable Companies Analysis, Investment Risk Analysis}\\
+\hspace{-3.1mm}\textbf{ Computer Science: }{Data Analytics, Web Development, App Development using Flutter, Programming and Data Structures, Machine Learning}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+\resumePOR{\textbf{Senior Manager | Entrepreneurship Cell, IIT Kharagpur}} % Position
+{I handle the Finance and Logistics portfolio.}{\raisebox{0.75pt}{July 2022 - Present}}
+\vspace{0.5mm}
+\resumePOR{\textbf{Associate Manager | Entrepreneurship Cell, IIT Kharagpur}}
+{I attained corporate partnerships worth INR 6,00,000 media partnerships worth INR 51,00,000.}
+{\raisebox{0.75pt}{November 2021 - July 2022}}
+\vspace{0.5mm}
+\resumePOR{\textbf{Associate Member | Entrepreneurship Cell, IIT Kharagpur}}
+{Organised Local Startups' Meet 2021, EdTech chapter which saw particiaption of 300+ startups.}
+{\raisebox{0.75pt}{May 2021 - November 2021}}
+\resumePOR{\textbf{GES Intern | Entrepreneurship Cell, IIT Kharagpur}}
+{Organised Global Entrepreneurship Summit 2021 in which 2000+ startup enthusiasts participated.}
+{\raisebox{0.75pt}{January 2021 - May 2021}}
+\vspace{0.5mm}
+\resumeSubHeadingListEnd
+\hspace*{-2mm}\rule{1.030\textwidth}{0.1mm}
+\vspace{0mm}
+
+%-------------------------------------------
+\end{document}
